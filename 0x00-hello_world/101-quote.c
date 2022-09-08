@@ -2,7 +2,6 @@
 #include <unistd.h>
 
 /**
- *
  * main - prints string without using printf and puts
  *
  * Return: Always 0 (Success)
