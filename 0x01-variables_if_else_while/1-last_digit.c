@@ -12,24 +12,24 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int n;
-	char a[100] = "Last digit of";
+	int n, s;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n < 5)
+	s = n % 10;
+	if (n > 5)
 	{
-		printf("%s %d and is greater than 5\n", a, n);
+		printf("Last digit of %d is %d and is greater than 5\n", n, s);
 	}
-	else if (n == 0)
+	else if (n == 0 && s == 0)
 	{
-		printf("%s %d and is 0\n", a, n);
+		printf("Last digit of %d is %d and is 0\n", n, s);
 	}
 	else if (n > 6 && n != 0)
 	{
 
-		printf("%s %d and is less than 6 and not 0", a, n);
+		printf("Last digits of %d is %d and is less than 6 and not 0", n, s);
 	}
 	return (0);
 }
