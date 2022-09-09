@@ -18,7 +18,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n > 5)
+	if (n < 5)
 	{
 		printf("%s %d and is greater than 5\n", a, n);
 	}
@@ -26,7 +26,7 @@ int main(void)
 	{
 		printf("%s %d and is 0\n", a, n);
 	}
-	else if (n < 6 && n != 0)
+	else if (n > 6 && n != 0)
 	{
 
 		printf("%s %d and is less than 6 and not 0", a, n);
