@@ -21,5 +21,6 @@ int main(void)
 	{
 	putchar(ch2);
 	}
+	printf("\n");
 	return (0);
 }
