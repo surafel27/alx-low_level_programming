@@ -5,7 +5,7 @@
  *
  * @c: input to the function parameter
  *
- * Returns - returns 1 if the input is number, returns c if input is character
+ * Return: returns 1 if the input is number, returns c if input is character
  */
 
 int _isalpha(int c)
