@@ -2,9 +2,10 @@
 
 /**
  * print_sign - used to print the sign of the numbers
+ *
  * @n: integer input as a parameter for the function
+ *
  * Retuns: 1 if n is greater than zero, 0 if n is zero. -1 if n is less than zero
- * prints: + if greater than 1, 0 if zero, - if -1
  */
 
 int print_sign(int n)
@@ -25,4 +26,3 @@ int print_sign(int n)
 		return (-1);
 	}
 }
-
