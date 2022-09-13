@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * print_sign - used to print the sign of the numbers
+ * print_sign - fuction to print sign
  *
- * @n: integer input as a parameter for the function
- *
- * Retuns: 1 if n is greater than zero, 0 if n is zero. -1 if n is less than zero
+ * @n: integer input as a parameter
+ * Retun: sign for the number
  */
 
 int print_sign(int n)
