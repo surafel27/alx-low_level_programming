@@ -4,7 +4,8 @@
  * print_sign - fuction to print sign
  *
  * @n: integer input as a parameter
- * Retun: sign for the number
+ *
+ * Return: sign for the number
  */
 
 int print_sign(int n)
