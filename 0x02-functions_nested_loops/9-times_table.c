@@ -1,17 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * times_table - prints the 9 times of the table
+ * time_table - prints the 9 times of the table
  *
  * Return: the resut of the time tables
  */
-int time_table(void)
+void time_table(void)
 {
 	int i, j, mul_val;
 
 	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <=9; j--)
+		for (j = 0; j <= 9; j--)
 		{
 			mul_val = i * j;
 			if (i == 0)
