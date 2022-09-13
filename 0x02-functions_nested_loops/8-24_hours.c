@@ -3,8 +3,6 @@
 /**
  * jack_bauer - function that prints every, minute and hour of the day
  *
- * @h: hour, m = minute
- *
  * Return: 24 houre clock line by line
  */
 void jack_bauer(void)
