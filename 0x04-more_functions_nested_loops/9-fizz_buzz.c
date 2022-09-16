@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -19,7 +20,7 @@ int main(void)
 		{
 			printf("%s", "Fizz");
 		}
-		else if (i % 5 ==0)
+		else if (i % 5 == 0)
 		{
 			printf("%s", "Buzz");
 		}
