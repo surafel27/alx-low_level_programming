@@ -4,7 +4,7 @@
 /**
  * print_diagonal - print diagonal line
  * @n: integer number of line '\'
- * Return: 0
+ * Return: void
  */
 
 void print_diagonal(int n)
@@ -13,13 +13,14 @@ void print_diagonal(int n)
 
 	for (row = 0; row < n; row++)
 	{
-		for (colum = 0; colum < n; colum++)
+		for (colum = 0; colum < row; colum++)
 		{
 			_putchar(' ');
 		}
 		_putchar('\\');
 		_putchar('\n');
 	}
+
 	if (n <= 0)
 	{
 		_putchar('\n');
