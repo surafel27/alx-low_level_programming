@@ -2,7 +2,7 @@
 
 /**
  * main -  calculate largest prime of 612852475143
- *
+ *@void: no argument
  * Return: Success Always
  */
 
@@ -12,11 +12,12 @@ int main(void)
 	long int x = 612852475143;
 	long int py;
 
-	for (py = 2; py < x; py++)
+	for (py = 2; py <= x; py++)
 	{
 		if (x % py == 0)
 		{
 			x = x / py;
+			py--;
 		}
 	}
 	printf("%ld\n", py);
