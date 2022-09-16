@@ -10,8 +10,9 @@ void print_line(int n)
 {
 	int row;
 
-	for (row = 0; row <= 4; row++)
+	for (row = 0; row <= n; row++)
 	{
-		if (row == 2)
-		{
-			_putchar(
+		_putchar('_');
+	}
+	_putchar('\n');
+}
