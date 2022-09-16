@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 #include <stdio.h>
 /**
  * print_line - prints line as output
@@ -10,7 +10,7 @@ void print_line(int n)
 {
 	int row;
 
-	for (row = 0; row <= n; row++)
+	for (row = 0; row < n; row++)
 	{
 		_putchar('_');
 	}
