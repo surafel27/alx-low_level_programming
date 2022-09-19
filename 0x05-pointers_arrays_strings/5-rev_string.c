@@ -12,16 +12,14 @@ void rev_string(char *s)
 	int begin = 0;
 	int end;
 	int count = 0;
-	int len;
 	char tmp;
 
-	len = strlen(s);
 	while (*s != '\0')
 	{
 		s++;
 		count++;
 	}
-	end = (len - 1);
+	end = (strlen(s) - 1);
 	while (begin < end)
 	{
 		tmp = s[begin];
