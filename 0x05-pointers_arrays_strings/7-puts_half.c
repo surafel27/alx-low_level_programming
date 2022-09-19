@@ -28,12 +28,15 @@ void puts_half(char *str)
 	if (_strlen(str) % 2 == 0)
 	{
 		n = _strlen(str) / 2;
-		_putchar(n + '\0');
 	}
 	else
 	{
 		n = (_strlen(str) - 1) / 2;
-		_putchar(n + '\0');
+	}
+	while (n < _strlen(str))
+	{
+		_putchar(*(str + n));
+		n++;
 	}
 	_putchar('\n');
 }
