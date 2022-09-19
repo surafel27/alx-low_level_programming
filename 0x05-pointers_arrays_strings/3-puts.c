@@ -1,6 +1,5 @@
 #include "main.h"
 #include <string.h>
-#include <stdout.h>
 
 /**
  * _puts - fuction to print a string
