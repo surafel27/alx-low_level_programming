@@ -5,6 +5,7 @@
  * _strcpy - function copies sring
  * @dest: character pointer
  * @src: character pointer
+ * Return: destination
  */
 
 char *_strcpy(char *dest, char *src)
