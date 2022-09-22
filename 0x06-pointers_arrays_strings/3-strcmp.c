@@ -9,12 +9,16 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	if (*s1 < *s2)
+	int i, j;
+
+	i = strlen(s1);
+	j = strlen(s2);
+	if (i < j)
 	{
 		_putchar('-');
 		_putchar(*s1);
 	}
-	else if (*s1 == *s2)
+	else if (i == j)
 	{
 		_putchar('0');
 	}
