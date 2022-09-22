@@ -25,7 +25,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		bigger = i;
 	}
-	for (i = 0; i< bigger; i++)
+	for (i = 0; i < bigger; i++)
 	{
 		if (s1[i] == s2[i])
 		{
