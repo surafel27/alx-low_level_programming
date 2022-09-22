@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strcmp - function used to compaire two strings
@@ -10,18 +9,18 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	if (s1 < s2)
+	if (*s1 < *s2)
 	{
 		_putchar('-');
-		_putchar(s1);
+		_putchar(*s1);
 	}
-	else if (s1 == s2)
+	else if (*s1 == *s2)
 	{
 		_putchar('0');
 	}
 	else
 	{
-		_putchar(s2);
+		_putchar(*s2);
 	}
 	return (0);
 }
