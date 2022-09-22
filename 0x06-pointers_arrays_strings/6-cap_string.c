@@ -30,10 +30,6 @@ char *cap_string(char *s)
 					s[i] -= 'a' - 'A';
 				}
 			}
-			if (s[i] >= 'A' && s[i] <= 'Z')
-			{
-				s[i] = s[i] + 32;
-			}
 		}
 	}
 	return (s);
