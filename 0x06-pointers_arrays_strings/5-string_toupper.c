@@ -2,20 +2,20 @@
 
 /**
  * string_toupper - function converts to upper
- * @letter: character to convert
+ * @s: character to convert
  * Return: character
  */
 
-char *string_toupper(char *letter)
+char *string_toupper(char *s)
 {
 	int i;
 
-	for (i = 0; i < strlen(letter); i++)
+	for (i = 0; i < strlen(s); i++)
 	{
-		if (letter[i] >= 97 && letter[i] <= 122)
+		if (s[i] >= 97 && s[i] <= 122)
 		{
-			letter[i] = letter[i] - 32;
+			s[i] = s[i] - 32;
 		}
 	}
-	return (letter);
+	return (s);
 }
