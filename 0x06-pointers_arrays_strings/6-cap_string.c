@@ -21,15 +21,6 @@ char *cap_string(char *s)
 				continue;
 			}
 		}
-		if (i == ' ')
-		{
-			++i;
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
-				s[i] = s[i] - 32;
-				continue;
-			}
-		}
 		else
 		{
 			for (j = 0; j <= 12; j++)
