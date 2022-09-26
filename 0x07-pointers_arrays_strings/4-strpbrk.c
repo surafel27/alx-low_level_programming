@@ -1,7 +1,8 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _strpbr - function searchs a string for any set of bytes
+ * _strpbrk - function searchs a string for any set of bytes
  * @s: character pointer
  * @accept: character pointer
  * Return: pointer byte in s
@@ -22,10 +23,10 @@ char *_strpbrk(char *s, char *accept)
 				if (s[i] == accept[j])
 				{
 					return (s);
-					break;
-				}
-				else
-				{
-					s++;
 				}
 			}
+		}
+	s++;
+	}
+	return (s);
+}
