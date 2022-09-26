@@ -1,6 +1,5 @@
 #include "main.h"
-#include <string.h>
-#include <stdbool.h>
+
 /**
  * _strspn - gets the length of a prefix substring
  * @s: character pointer
