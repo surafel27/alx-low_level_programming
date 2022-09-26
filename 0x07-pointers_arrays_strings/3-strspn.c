@@ -1,6 +1,6 @@
 #include "main.h"
 #include <string.h>
-
+#include <stdbool.h>
 /**
  * _strspn - gets the length of a prefix substring
  * @s: character pointer
@@ -11,7 +11,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0, j = 0;
-	int init_length = 0;
+	unsigned int init_length = 0;
 	int len1 = strlen(s);
 	int len2 = strlen(accept);
 
