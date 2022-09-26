@@ -28,8 +28,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			if (!found_match)
 				break;
-			init_length++;
-			j++;
+		j++;
 		}
 	i++;
 	}
