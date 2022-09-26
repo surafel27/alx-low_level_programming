@@ -24,7 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[j] == s[i])
 			{
 				found_match = true;
-				init_length++;
+				return (s);
 			}
 			if (!found_match)
 				break;
