@@ -9,12 +9,12 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int j = 0, found_match;
+	int j, found_match;
 	unsigned int init_length = 0;
 
 	while (*s)
 	{
-		while (j < accept[j])
+		for (j = 0; j < accept[j]; j++)
 		{
 			found_match = 0;
 			if (*s == accept[j])
@@ -23,7 +23,6 @@ unsigned int _strspn(char *s, char *accept)
 				found_match = 1;
 				break;
 			}
-		j++;
 		}
 		if (!found_match)
 			break;
