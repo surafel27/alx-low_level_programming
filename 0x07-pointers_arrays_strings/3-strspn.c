@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 
 		while (j < len2)
 		{
-			if (s[j] == accept[j])
+			if (s[i] == accept[j])
 			{
 				found_match = true;
 				break;
