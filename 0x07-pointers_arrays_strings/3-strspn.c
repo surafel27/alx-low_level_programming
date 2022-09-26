@@ -10,26 +10,24 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0, j = 0;
+	int j = 0, found_match;
 	unsigned int init_length = 0;
-	int len1 = strlen(s);
-	int len2 = strlen(accept);
 
-	while (i < len1)
+	while (*s)
 	{
-		bool found_match = false;
-
-		while (j < len2)
+		while (j < accept[j])
 		{
-			if (accept[j] == s[i])
+			found_match = 0;
+			if (*s == accept[j])
 			{
-				found_match = true;
+				init_length++;
+				found_match = 1;
 			}
-			if (!found_match)
-				break;
 		j++;
 		}
-	i++;
+		if (!found_match)
+			break;
+	s++;
 	}
 	return (init_length);
 }
