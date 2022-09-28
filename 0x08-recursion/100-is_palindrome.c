@@ -3,7 +3,7 @@ int lengthc(char *s);
 int palindrome(char str[], int st, int end);
 /**
  * is_palindrome - fuction used to check palandirom
- * @c: character string
+ * @s: character string
  * Return: 1 if true 0 if not
  */
 
@@ -16,6 +16,12 @@ int is_palindrome(char *s)
 		return (1);
 	return (palindrome(s, 0, len - 1));
 }
+/**
+ * lengthc - function used to length the string
+ * @s: character string to be counted
+ * Return: 0 if true
+ */
+
 int lengthc(char *s)
 {
 	if (*s != '\0')
@@ -30,6 +36,7 @@ int lengthc(char *s)
  * @end: end of string from is_palindrome, from lengthc
  * Return: if str is a palindrome
  */
+
 int palindrome(char str[], int st, int end)
 {
 	if (st >= end)
