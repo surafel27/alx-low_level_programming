@@ -15,13 +15,18 @@ int main(int argc, char *argv[])
 
 	if (argc != 0 && argc != 9)
 	{
-		if (argc > 1)
+		if (argc != 3)
+		{
+			printf("%s\n", "Error");
+			return (1);
+		}
+		else
 		{
 			for (count = 0; count < argc; count++)
 			{
 				mul *= atoi(argv[count]);
-				printf("%d\n", mul);
 			}
+			printf("%d\n", mul);
 		}
 	}
 	return (0);
