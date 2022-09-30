@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		return (0);
 	}
-	if (argc != 0 && argc != 9)
+	else if (argc != 0 && argc != 9)
 	{
 		printf("%s\n", "Error");
 		return (1);
