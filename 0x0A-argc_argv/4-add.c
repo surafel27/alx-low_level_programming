@@ -5,7 +5,7 @@
 /**
  * main - fuction add positive number
  * @agrc: size of the argument
- * @rgv: array of the argv
+ * @argv: array of the argv
  * Return: zero
  */
 
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int count, sum = 0;
 
-	if (argc == '\0')
+	if (argc < 1)
 	{
 		return (0);
 	}
