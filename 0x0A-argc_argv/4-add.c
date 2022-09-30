@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	}
 	for (count = 0; count < argc; count++)
 	{
-		if (atoi(argv[count]) != 0 && atoi(argv[count]) != 9)
+		if (!atoi(argv[count]))
 		{
 			printf("%s\n", "Error");
 			return (1);
