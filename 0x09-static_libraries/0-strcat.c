@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * _strcat - function used to concatenate strings
  * @dest: character pointer
