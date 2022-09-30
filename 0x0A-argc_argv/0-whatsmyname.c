@@ -8,6 +8,8 @@
  */
 int main(int argc, char **argv)
 {
-	_putchar(argv[0]);
+	agrc = 0;
+
+	printf("%s\n", argv[argc]);
 	return (0);
 }
