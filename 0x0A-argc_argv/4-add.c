@@ -17,15 +17,16 @@ int main(int argc, char *argv[])
 	{
 		return (0);
 	}
-	else if (argc != 0 && argc != 9)
-	{
-		printf("%s\n", "Error");
-		return (1);
-	}
 	else
 	{
 		for (count = 0; count < argc; count++)
 		{
+			if (atoi(argv[count]) != 0 && atoi(argv[count]))
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
+
 			sum += atoi(argv[count]);
 		}
 		printf("%d\n", sum);
