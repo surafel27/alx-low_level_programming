@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - fuction used tor pting its name
  * @argc: counte the size
@@ -8,7 +8,7 @@
  */
 int main(int argc, char **argv)
 {
-	agrc = 0;
+	argc = 0;
 
 	printf("%s\n", argv[argc]);
 	return (0);
