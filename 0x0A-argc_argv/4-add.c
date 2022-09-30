@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 	}
 	for (count = 0; count < argc; count++)
 	{
-		if (atoi(argv[count]) != 0 && atoi(argv[count]))
+		if (atoi(argv[count]) != 0 && atoi(argv[count]) != 9)
 		{
 			printf("%s\n", "Error");
 			return (1);
 		}
-			sum += atoi(argv[count]);
+		sum += atoi(argv[count]);
 	}
-	 printf("%d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
