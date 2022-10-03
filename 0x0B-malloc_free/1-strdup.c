@@ -13,14 +13,11 @@ char *_strdup(char *str)
 	char *src;
 	char *p;
 	int len;
+	/*char _empty[] = "failed to allocate memory";*/
 
 	len = strlen(str);
 	src = (char *)malloc(len + 1 * sizeof(char));
-	if (src == NULL)
-	{
-		return (NULL);
-	}
-	if (src == 0)
+	if (src < 0)
 	{
 		return (NULL);
 	}
