@@ -18,8 +18,8 @@ char *str_concat(char *s1, char *s2)
 	len1 = strlen(s1);
 	len2 = strlen(s2);
 	total_len = len1 + len2;
-	str = (char *)malloc(total_len * sizeof(char));
-	if ((s1 == NULL) && (s2 == NULL))
+	str = (char *)malloc((total_len + 1) * sizeof(char));
+	if (s1 == NULL && s2 == NULL)
 	{
 		return (" ");
 	}
