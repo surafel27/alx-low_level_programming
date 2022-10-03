@@ -20,6 +20,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	if (src == 0)
+	{
+		return (NULL);
+	}
 	else
 	{
 		p = src;
