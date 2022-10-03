@@ -20,11 +20,15 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	p = src;
-	while (*str)
+	else
 	{
-		*p++ = *str++;
+		p = src;
+		while (*str)
+		{
+			*p++ = *str++;
+		}
+		*p = '\0';
+		return (src);
 	}
-	*p = '\0';
-	return (src);
+	return (NULL);
 }
