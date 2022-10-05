@@ -51,9 +51,12 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 1; i < ac; i++)
 	{
+		if (av[i] == ' ')
+		{
+			putchar('\n');
+		}
 		_strcat(str, av[i]);
 	}
-	printf("\n");
 	return (str);
 	free(str);
 }
