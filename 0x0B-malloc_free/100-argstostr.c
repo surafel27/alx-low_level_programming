@@ -45,6 +45,7 @@ char *argstostr(int ac, char **av)
 	for (i = 1; i < ac; i++)
 	{
 		_strcat(str, av[i]);
+		_putchar('\n');
 	}
 	return (str);
 	free(str);
