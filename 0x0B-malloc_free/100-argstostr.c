@@ -44,8 +44,11 @@ char *argstostr(int ac, char **av)
 		len += strlen(av[i]);
 	}
 	str = (char *)malloc(len * sizeof(char));
-	str[0] = '\0';
-
+	if (str == NULL)
+	{
+		return (0);
+		free(str);
+	}
 	for (i = 1; i < ac; i++)
 	{
 		_strcat(str, av[i]);
