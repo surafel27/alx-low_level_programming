@@ -44,6 +44,7 @@ char *argstostr(int ac, char **av)
 		len += strlen(av[i]);
 	}
 	str = malloc(len * sizeof(char) + 1);
+	str[0] = '\0';
 	if (str == NULL)
 	{
 		return (NULL);
