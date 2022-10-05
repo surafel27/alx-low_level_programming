@@ -39,17 +39,17 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
-		len += strlen(av[i] + 1);
+		len += strlen(av[i]);
 	}
-	str = malloc(len * sizeof(char));
+	str = malloc(len * sizeof(char) + 2);
 	str[0] = '\0';
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		if (*av[i] == ' ')
 		{
