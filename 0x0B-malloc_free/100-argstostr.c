@@ -32,7 +32,7 @@ char *_strcat(char *dest, char *src)
 char *argstostr(int ac, char **av)
 {
 	int i;
-	int len = 1;
+	int len = ac;
 	char *str;
 
 	if (ac == 0 || av == NULL)
@@ -43,20 +43,19 @@ char *argstostr(int ac, char **av)
 	{
 		len += strlen(av[i]);
 	}
-	str = (char *)malloc(len * sizeof(char));
+	str = malloc(len * sizeof(char) + 1);
 	if (str == NULL)
 	{
-		return (0);
-		free(str);
+		return (NULL);
 	}
 	for (i = 1; i < ac; i++)
 	{
 		if (*av[i] == ' ')
 		{
-			putchar('\n');
+			str[i] = '\n';
 		}
 		_strcat(str, av[i]);
 	}
+	str[len] = '\0';
 	return (str);
-	free(str);
 }
