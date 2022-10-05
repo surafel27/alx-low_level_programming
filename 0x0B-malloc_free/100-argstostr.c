@@ -19,7 +19,6 @@ char *_strcat(char *dest, char *src)
 		dest[dest_len + i] = src[i];
 	}
 	dest[dest_len + i] = '\0';
-	putchar('\n');
 	return (dest);
 }
 
@@ -54,7 +53,7 @@ char *argstostr(int ac, char **av)
 	{
 		_strcat(str, av[i]);
 	}
-	_putchar('\n');
+	printf("\n");
 	return (str);
 	free(str);
 }
