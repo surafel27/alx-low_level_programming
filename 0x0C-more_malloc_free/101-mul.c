@@ -30,18 +30,9 @@ int main(int argc, char **argv)
 			}
 		}
 	}
-	/*for (x = 0; *argv[x] != '\0'; x++)
-		;
-	s = malloc(sizeof(int) * x);
-	if (s == NULL)
-	{
-		return (0);
-	}*/
-
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
 	mul = num1 * num2;
-	/* s = mul;*/
 	printf("%d\n", mul);
 	return (0);
 }
