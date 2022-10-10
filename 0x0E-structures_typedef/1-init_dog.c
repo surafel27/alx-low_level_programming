@@ -4,6 +4,7 @@
 
 /**
  * init_dog - fuction used to print sttruct data
+ * @d: structure pointer
  * @name: character
  * @age: float
  * @owner: character
@@ -12,7 +13,7 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	d = malloc(sizeof(struct dog));
-	d -> name = name;
-	d -> age = age;
-	d -> owner = owner;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
