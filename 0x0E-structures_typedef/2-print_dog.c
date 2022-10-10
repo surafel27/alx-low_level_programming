@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-#include <strin.g>
+#include <string.h>
 
 /**
  * print_dog - fuction used to print struct data
