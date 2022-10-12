@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * get_op_fun - function get the function
+ * get_op_func - function get the function
  * @s: character pointer
  * Return: pointer
  */
