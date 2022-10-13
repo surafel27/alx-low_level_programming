@@ -14,10 +14,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *str;
 	va_list ap_ptr;
-	va_list ap_cpy;
 
 	va_start(ap_ptr, n);
-	va_copy(ap_cpy, ap_ptr);
 	for (i = 0; i < n; i++)
 	{
 		str = va_arg(ap_ptr, char *);
