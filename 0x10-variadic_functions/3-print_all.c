@@ -25,7 +25,7 @@ void print_all(const char * const format, ...)
 		{
 			separator = "";
 		}
-		switch(format[n])
+		switch (format[n])
 		{
 			case 'c':
 				printf("%c%s", va_arg(ap_ptr, int), separator);
@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 				str = va_arg(ap_ptr, char *);
 				if (str == NULL)
 				{
-					str ="(nil)";
+					str = "(nil)";
 				}
 				printf("%s%s", str, separator);
 				break;
