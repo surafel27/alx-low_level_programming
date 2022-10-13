@@ -11,7 +11,7 @@
 
 void print_all(const char * const format, ...)
 {
-	char *separator = ",";
+	char *separator = ", ";
 	char *str;
 	int n = 0, i = 0;
 	va_list ap_ptr;
