@@ -5,7 +5,7 @@
 
 /**
  * free_list - function frees the memory
- * @head - structure pointer
+ * @head: structure pointer
  * Return: void
  */
 
@@ -13,7 +13,7 @@ void free_list(list_t *head)
 {
 	if (head == NULL)
 		return;
-	if (head != NULL)
+	while (head != NULL)
 	{
 		list_t *temp;
 
