@@ -14,11 +14,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	unsigned int i;
 	list_t *newend, *newend2;
 
-	if (str == NULL)
+	newend = malloc(sizeof(list_t *));
+	if (newend == NULL || str == NULL)
 	{
+		free(newend);
 		return (NULL);
 	}
-	newend = malloc(sizeof(list_t *));
 	newend->str = strdup(str);
 	for (i = 0; str[i] != '\0'; i++)
 		;
