@@ -11,29 +11,27 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-        unsigned int i;
-        list_t *newend, *newend2;
+	unsigned int i;
+	list_t *newend, *newend2;
 
-        if (str == NULL)
-        {
-                return (NULL);
-        }
-        newend = malloc(sizeof(list_t *));
-	
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	newend = malloc(sizeof(list_t *));
 	newend->str = strdup(str);
-	for (i =0; str[i] !='\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 		;
 	newend->len = i;
 	newend->next = NULL;
-
-        if (*head == NULL)
-        {
+	if (*head == NULL)
+	{
 		*head = newend;
 	}
 	else
 	{
 		newend2 = *head;
-		while(newend2->next)
+		while (newend2->next)
 		{
 			newend2 = newend2->next;
 		}
