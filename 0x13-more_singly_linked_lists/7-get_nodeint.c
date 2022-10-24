@@ -19,7 +19,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		return (NULL);
 	}
-	while (tmp != NULL)
+	while (tmp->next != NULL)
 	{
 		count += 1;
 		tmp = tmp->next;
