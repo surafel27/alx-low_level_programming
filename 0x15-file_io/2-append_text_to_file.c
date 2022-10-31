@@ -10,20 +10,20 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, fwr;
+	int file, fwr;
 	int i;
 
 	if (filename == NULL)
 		return (-1);
-	while (text_content[i])
-		i++;
-	if (text_content == NULL)
-	{
-		close(fd);
-		return (-1);
-	}
+
 	fd = open(filename, 0_RDWR | O_APPEND);
 	if (fd == -1)
+		return (-1);
+
+	while (text_content[i])
+		i++;
+
+	if (tetx_content[i])
 	{
 		close(fd);
 		return (-1);
