@@ -12,21 +12,16 @@ int cp_file(char *file_frm, char *file_to)
 	int fd_1, fd_2, rd, wr;
 	char buffer[1024];
 
-	if(file_frm == NULL)
-	{
-		dprintf(2, "Error: Can't read from file %s", file_frm);
-		exit(98);
-	}
 	fd_1 = open(file_frm, O_RDONLY);
 	if (fd_1 == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s", file_frm);
+		dprintf(2, "Error: Can't read from file %s\n", file_frm);
 		exit(98);
 	}
-	fd_2 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fd_2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_2 == -1)
         {
-                dprintf(2, "Error: Can't read from file %s", file_to);
+                dprintf(2, "Error: Can't write to %s\n", file_to);
                 exit(99);
         }
 	while((rd = read(fd_1, buffer, 1024)) != 0)
@@ -39,7 +34,7 @@ int cp_file(char *file_frm, char *file_to)
 		wr = write(fd_2, buffer, rd);
 		if (wr == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s", file_to);
+			dprintf(2, "Error: Can't write to %s\n", file_to);
                         exit(99);
                 }
 	}
