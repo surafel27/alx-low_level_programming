@@ -24,11 +24,11 @@ int cp_file(char *file_frm, char *file_to)
                 dprintf(2, "Error: Can't write to %s\n", file_to);
                 exit(99);
         }
-	while((rd = read(fd_1, buffer, 1024) != 0))
+	while((rd = read(fd_1, buffer, 1024)) != 0)
 	{
 		if (rd == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s", file_to);
+			dprintf(2, "Error: Can't read from file %s\n", file_to);
 			exit(98);
 		}
 		wr = write(fd_2, buffer, rd);
@@ -65,7 +65,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	cp_file(argv[1], argv[2]);
