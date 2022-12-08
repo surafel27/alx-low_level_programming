@@ -2,6 +2,7 @@
 
 /**
  * get_dnodeint_at_index - function get node at index
+ * @head: the address of the node
  * @index: the node to be returned
  * Return: the node if found, NULL if not
  */
