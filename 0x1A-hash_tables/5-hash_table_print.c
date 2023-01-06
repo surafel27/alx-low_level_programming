@@ -22,6 +22,8 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			printf("'%s' : '%s'", tmp->key, tmp->value);
 			printf(", ");
+			if (ht->array[idx + 1] == NULL)
+				break;
 			tmp = tmp->next;
 		}
 		idx++;
