@@ -16,13 +16,13 @@ int iterative_search(int *array, size_t low, size_t high, int value)
 	{
 		size_t i;
 		size_t mid = (low + high) / 2;
+
 		printf("Searching in array: ");
 		for (i = low; i < high; i++)
 		{
 			printf("%d, ", array[i]);
 		}
-		printf("%d\n", array[i]);
-	       	
+		printf("%d\n", array[i])
 		if (array[mid] == value)
 		{
 			return (mid);
@@ -50,5 +50,6 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t low = 0;
 	size_t high = size - 1;
-	return iterative_search(array, low, high, value);
+
+	return (iterative_search(array, low, high, value));
 }
