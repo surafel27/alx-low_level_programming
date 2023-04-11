@@ -49,7 +49,8 @@ int iterative_search(int *array, size_t low, size_t high, int value)
 int binary_search(int *array, size_t size, int value)
 {
 	if (array == NULL)
-		return (-1)
+		return (-1);
+
 	size_t low = 0;
 	size_t high = size - 1;
 
