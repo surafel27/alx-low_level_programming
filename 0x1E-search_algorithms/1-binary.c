@@ -22,7 +22,7 @@ int iterative_search(int *array, size_t low, size_t high, int value)
 		{
 			printf("%d, ", array[i]);
 		}
-		printf("%d\n", array[i])
+		printf("%d\n", array[i]);
 		if (array[mid] == value)
 		{
 			return (mid);
